@@ -1,0 +1,22 @@
+<div class="container">
+
+  <form (submit)="addTask($event)">
+    <div class="form-group">
+      <input type="text" [(ngModel)]="title" name="title" class="form-control" placeholder="Add tasks">
+    </div>
+  </form>
+
+  <div class="row" *ngFor="let task of allTasks">
+
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      {{task.name}}
+    </div>
+    <br>
+    <br>
+
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <input type="button" (click)="deleteTask(task.itemId)" value="Delete" class="btn btn-outline-danger">
+    </div>
+  </div>
+
+</div>
