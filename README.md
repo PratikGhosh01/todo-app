@@ -13,3 +13,7 @@ Run `node index.js` to start the node server.Also mongodb database should be run
 ## Node module details
 
 Run `npm install` / `yarn install` for installing the required modules in both the frontend and backend folders
+
+## API documentation details
+
+The documentation of the API has been provided in the apidoc folder
